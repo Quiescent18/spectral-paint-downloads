@@ -2,19 +2,23 @@
 
 Windows x64 standalone audio editor and ARA-enabled VST3.
 
-## Download
+## Download Windows Application + VST3
 
-Open [Releases](https://github.com/Quiescent18/spectral-paint-downloads/releases) and download **SpectralPaint-1.0.3-Windows-x64-Manual-Correction.zip** from the release's **Assets** section. The ZIP includes the EXE, complete VST3 bundle, approved illustrated user manual, demo audio, installation notes and license notices. The corrected **SpectralPaint-1.0.3-Users-Manual.pdf**, the updated **WHATS-NEW-1.0.3.txt** shortcut guide and SHA-256 checksums are also attached to the release.
+Open [the latest release](https://github.com/Quiescent18/spectral-paint-downloads/releases/latest) and download **SpectralPaint-1.0.3-Windows-App-and-VST3-x64.zip** under **Assets**.
 
-Extract the whole ZIP before use. Close your DAW before replacing the complete VST3 bundle. For standalone use, launch **Spectral Paint.exe** and select your audio device. For plug-in use, install the bundle in a scanned VST3 folder and enable ARA source access in an ARA-capable DAW. Follow the manual for details and supported limits.
+This ZIP contains **Spectral Paint.exe** (the Windows standalone application), the complete **Spectral Paint.vst3** plug-in bundle, the illustrated user manual, shortcut guide, demo audio, installation notes and license notices. Use this Windows package to install the software. GitHub's separate **Source code** archives contain repository files.
 
-The manual now includes **Alt + left-click-drag on page 12**, with grouping instructions on page 7. The corrected package contains the same tested EXE and VST3 binaries.
+Extract the whole ZIP before use. Close your DAW before replacing the complete VST3 bundle. For standalone use, launch **Spectral Paint.exe** and select your audio device. For plug-in editing, install the bundle in a scanned VST3 folder and enable ARA source access in an ARA-capable DAW.
+
+## Manual and checksums
+
+The release also includes **SpectralPaint-1.0.3-Users-Manual.pdf**, **WHATS-NEW-1.0.3.txt** and **SHA256SUMS.txt**. Manual page 7 explains selection grouping; page 12 lists keyboard and mouse shortcuts.
 
 ## New in 1.0.3
 
-Hold **Alt and left-drag** in either visualizer to toggle existing areas in the linked group. Each box adds ungrouped areas, removes already-grouped areas, and preserves untouched members. The waveform uses time overlap; the spectrum uses time/frequency overlap. Empty boxes preserve the group, and Hand mode stays active so you can continue panning.
+Hold **Alt and left-drag** in either visualizer to toggle existing areas in the linked group. Each box adds ungrouped areas, removes already-grouped areas, and preserves untouched members. The waveform uses time overlap; the spectrum uses time/frequency overlap. Empty boxes preserve the group, and Hand mode stays active for continued panning.
 
-Switch to Eyedropper to resize grouped edges. Escape or Unlink exits group mode; Delete discards grouped highlight rectangles. Remove, Reduce, Crop and Solo continue to use all highlighted spectral content. Read the shortcut guide for details.
+Switch to Eyedropper to resize grouped edges. Escape or Unlink exits group mode; Delete discards grouped highlight rectangles. Remove, Reduce, Crop and Solo use all highlighted spectral content.
 
 ## Features
 
@@ -30,6 +34,4 @@ Audio timing and duration are preserved. Color matching is not instrument recogn
 
 ## Download verification
 
-Compare downloads against **SHA256SUMS-Manual-Correction.txt**. The binaries are unsigned; Kisatchie Audio file metadata is not a digital signing certificate. Retain all supplied license notices. Third-party components retain their own license terms.
-
-This repository hosts public downloads and documentation.
+Compare downloads against **SHA256SUMS.txt**. The binaries are unsigned; Kisatchie Audio file metadata is not a digital signing certificate. Retain all supplied license notices. Third-party components retain their own license terms.
