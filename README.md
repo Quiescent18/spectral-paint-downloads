@@ -4,9 +4,15 @@ Windows x64 standalone audio editor and ARA-enabled VST3.
 
 ## Download
 
-Open [Releases](https://github.com/Quiescent18/spectral-paint-downloads/releases) and download **SpectralPaint-1.0-Windows-x64.zip** from the release's **Assets** section. The ZIP includes the EXE, complete VST3 bundle, approved illustrated user manual, demo audio, installation notes and license notices. A separate PDF manual and SHA-256 checksums are also attached to the release.
+Open [Releases](https://github.com/Quiescent18/spectral-paint-downloads/releases) and download **SpectralPaint-1.0.3-Windows-x64.zip** from the release's **Assets** section. The ZIP includes the EXE, complete VST3 bundle, approved illustrated user manual, demo audio, installation notes and license notices. A separate PDF manual, the updated **WHATS-NEW-1.0.3.txt** shortcut guide and SHA-256 checksums are also attached to the release.
 
 Extract the whole ZIP before use. Close your DAW before replacing the complete VST3 bundle. For standalone use, launch **Spectral Paint.exe** and select your audio device. For plug-in use, install the bundle in a scanned VST3 folder and enable ARA source access in an ARA-capable DAW. Follow the manual for details and supported limits.
+
+## New in 1.0.3
+
+Hold **Alt and left-drag** in either visualizer to toggle existing areas in the linked group. Each box adds ungrouped areas, removes already-grouped areas, and preserves untouched members. The waveform uses time overlap; the spectrum uses time/frequency overlap. Empty boxes preserve the group, and Hand mode stays active so you can continue panning.
+
+Switch to Eyedropper to resize grouped edges. Escape or Unlink exits group mode; Delete discards grouped highlight rectangles. Remove, Reduce, Crop and Solo continue to use all highlighted spectral content. Read the shortcut guide for details.
 
 ## Features
 
