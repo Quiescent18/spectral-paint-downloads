@@ -8,7 +8,7 @@ Open [Releases](https://github.com/Quiescent18/spectral-paint-downloads/releases
 
 Extract the whole ZIP before use. Close your DAW before replacing the complete VST3 bundle. For standalone use, launch **Spectral Paint.exe** and select your audio device. For plug-in use, install the bundle in a scanned VST3 folder and enable ARA source access in an ARA-capable DAW. Follow the manual for details and supported limits.
 
-The manual now includes **Alt + left-click-drag on page 12**, with grouping instructions on page 7. Downloads marked **Previous-Manual** are older copies. The corrected package contains the same tested EXE and VST3 binaries.
+The manual now includes **Alt + left-click-drag on page 12**, with grouping instructions on page 7. The corrected package contains the same tested EXE and VST3 binaries.
 
 ## New in 1.0.3
 
