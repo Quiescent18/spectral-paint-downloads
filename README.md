@@ -4,7 +4,7 @@ Windows x64 standalone audio editor and ARA-enabled VST3.
 
 ## Download
 
-Open [Releases](../../releases) and download **SpectralPaint-1.0-Windows-x64.zip** from the release's **Assets** section. The ZIP includes the EXE, complete VST3 bundle, approved illustrated user manual, demo audio, installation notes and license notices. A separate PDF manual and SHA-256 checksums are also attached to the release.
+Open [Releases](https://github.com/Quiescent18/spectral-paint-downloads/releases) and download **SpectralPaint-1.0-Windows-x64.zip** from the release's **Assets** section. The ZIP includes the EXE, complete VST3 bundle, approved illustrated user manual, demo audio, installation notes and license notices. A separate PDF manual and SHA-256 checksums are also attached to the release.
 
 Extract the whole ZIP before use. Close your DAW before replacing the complete VST3 bundle. For standalone use, launch **Spectral Paint.exe** and select your audio device. For plug-in use, install the bundle in a scanned VST3 folder and enable ARA source access in an ARA-capable DAW. Follow the manual for details and supported limits.
 
