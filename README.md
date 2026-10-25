@@ -4,9 +4,11 @@ Windows x64 standalone audio editor and ARA-enabled VST3.
 
 ## Download
 
-Open [Releases](https://github.com/Quiescent18/spectral-paint-downloads/releases) and download **SpectralPaint-1.0.3-Windows-x64.zip** from the release's **Assets** section. The ZIP includes the EXE, complete VST3 bundle, approved illustrated user manual, demo audio, installation notes and license notices. A separate PDF manual, the updated **WHATS-NEW-1.0.3.txt** shortcut guide and SHA-256 checksums are also attached to the release.
+Open [Releases](https://github.com/Quiescent18/spectral-paint-downloads/releases) and download **SpectralPaint-1.0.3-Windows-x64-Manual-Correction.zip** from the release's **Assets** section. The ZIP includes the EXE, complete VST3 bundle, approved illustrated user manual, demo audio, installation notes and license notices. The corrected **SpectralPaint-1.0.3-Users-Manual.pdf**, the updated **WHATS-NEW-1.0.3.txt** shortcut guide and SHA-256 checksums are also attached to the release.
 
 Extract the whole ZIP before use. Close your DAW before replacing the complete VST3 bundle. For standalone use, launch **Spectral Paint.exe** and select your audio device. For plug-in use, install the bundle in a scanned VST3 folder and enable ARA source access in an ARA-capable DAW. Follow the manual for details and supported limits.
+
+The manual now includes **Alt + left-click-drag on page 12**, with grouping instructions on page 7. Downloads marked **Previous-Manual** are older copies. The corrected package contains the same tested EXE and VST3 binaries.
 
 ## New in 1.0.3
 
@@ -28,6 +30,6 @@ Audio timing and duration are preserved. Color matching is not instrument recogn
 
 ## Download verification
 
-Compare downloads against **SHA256SUMS.txt**. The binaries are unsigned; Kisatchie Audio file metadata is not a digital signing certificate. Retain all supplied license notices. Third-party components retain their own license terms.
+Compare downloads against **SHA256SUMS-Manual-Correction.txt**. The binaries are unsigned; Kisatchie Audio file metadata is not a digital signing certificate. Retain all supplied license notices. Third-party components retain their own license terms.
 
 This repository hosts public downloads and documentation.
