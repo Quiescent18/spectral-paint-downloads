@@ -1,0 +1,152 @@
+{
+  "tag": "v1.0.9",
+  "zip_name": "SpectralPaint-1.0.9-Windows-App-and-VST3-x64.zip",
+  "sha256": "c856198529e538432c98b02756228780f49b7a3af5b385c1ea608f311e5f5207",
+  "size_bytes": 9287018,
+  "part_size": 399000,
+  "parts": [
+    {
+      "path": ".release-assets/v1.0.9/archive.part000",
+      "size": 399000,
+      "sha256": "74a62eed5071b4a16dceb636a6a7af2eb44509f6e7deb5f95f628a7e592492fc"
+    },
+    {
+      "path": ".release-assets/v1.0.9/archive.part001",
+      "size": 399000,
+      "sha256": "32197dd788758ccce9a35423098071bcc9ba276b780963658914242470c76e1c"
+    },
+    {
+      "path": ".release-assets/v1.0.9/archive.part002",
+      "size": 399000,
+      "sha256": "bad233bf7d696544ffa62106eacad684f417827e34ad8e1f9284baf13719010f"
+    },
+    {
+      "path": ".release-assets/v1.0.9/archive.part003",
+      "size": 399000,
+      "sha256": "68a97968709b0b628341c4f459a059e077b1cae3ec03e285eed2aed41eb4df98"
+    },
+    {
+      "path": ".release-assets/v1.0.9/archive.part004",
+      "size": 399000,
+      "sha256": "2dd80d64edc5c91bb5026221b63d98b895be8bf30b86051653bb0024c5c6163a"
+    },
+    {
+      "path": ".release-assets/v1.0.9/archive.part005",
+      "size": 399000,
+      "sha256": "ade2ddfb22070ea74ffb16fd7ff861ef17c2549d203a91ad2bf7f64f2659d9f2"
+    },
+    {
+      "path": ".release-assets/v1.0.9/archive.part006",
+      "size": 399000,
+      "sha256": "402d8ef8cc5d4b634fd5d8ea434d3fb35b53fee61c2ef1a1d1ce0d6d160db280"
+    },
+    {
+      "path": ".release-assets/v1.0.9/archive.part007",
+      "size": 399000,
+      "sha256": "eed507d395333e817c29c2421b5b9ccbc7876907c6af1923b16641d748cfa12e"
+    },
+    {
+      "path": ".release-assets/v1.0.9/archive.part008",
+      "size": 399000,
+      "sha256": "ebc71ea58eed6bb57f0f6862d89cafb3d3deba3a33dc5cfb9362af8b6c3f72b6"
+    },
+    {
+      "path": ".release-assets/v1.0.9/archive.part009",
+      "size": 399000,
+      "sha256": "caf8ac5c327b2eeaa3e1d9dedb3b6b1ebf4b7c34282dea4d3b13bbef2d2e487c"
+    },
+    {
+      "path": ".release-assets/v1.0.9/archive.part010",
+      "size": 399000,
+      "sha256": "59ed0b13859b5cdb012a6a367dce200ef5f3242eb616996486938e54cc1c2a85"
+    },
+    {
+      "path": ".release-assets/v1.0.9/archive.part011",
+      "size": 399000,
+      "sha256": "6c11de5faeb81e6960f3742d12178f721bccecf9e652d012f107647882ca9ca2"
+    },
+    {
+      "path": ".release-assets/v1.0.9/archive.part012",
+      "size": 399000,
+      "sha256": "1df03e23a94742bff8776aa39fbefe84d0393de65950d1c7153c8b79eb98064f"
+    },
+    {
+      "path": ".release-assets/v1.0.9/archive.part013",
+      "size": 399000,
+      "sha256": "44596ea88bd0fd5611e1b9ec06db4e39164ab0550f56ead857c57975cba2eba2"
+    },
+    {
+      "path": ".release-assets/v1.0.9/archive.part014",
+      "size": 399000,
+      "sha256": "a2b1dbf478c8acefd1710cf28439d4af03f033fdc12a7cf53776830f1581fe1e"
+    },
+    {
+      "path": ".release-assets/v1.0.9/archive.part015",
+      "size": 399000,
+      "sha256": "d18a23c59ebecfa2dbcb5535ec9e71e65c187af3e08e222c43c927435578907f"
+    },
+    {
+      "path": ".release-assets/v1.0.9/archive.part016",
+      "size": 399000,
+      "sha256": "c0b00665e6bbaa6c243084ad3090cc22efd1c64fe3fac5aca4e260b3168f3728"
+    },
+    {
+      "path": ".release-assets/v1.0.9/archive.part017",
+      "size": 399000,
+      "sha256": "a965542d0905c6ce062c83a531a70d9f73003790a5e35a6861ac7a95be31b9b4"
+    },
+    {
+      "path": ".release-assets/v1.0.9/archive.part018",
+      "size": 399000,
+      "sha256": "02ae6d30282c554fb30d23668b5fe35b84aaf45daaf0244ab5b83e7f1e7f5a09"
+    },
+    {
+      "path": ".release-assets/v1.0.9/archive.part019",
+      "size": 399000,
+      "sha256": "a8bea42788d4d59b2b6a442b00c6d8521781406e9734005ee2560e68157ddb82"
+    },
+    {
+      "path": ".release-assets/v1.0.9/archive.part020",
+      "size": 399000,
+      "sha256": "f3c0494777134ae66aa6e8fb7ea6717d41444ee56c996554f9b70ea7580478b0"
+    },
+    {
+      "path": ".release-assets/v1.0.9/archive.part021",
+      "size": 399000,
+      "sha256": "08ecc5fa058b26ebdf9d9a2d79f64aa2c2e1d948956d0060b90971c1f0f898c1"
+    },
+    {
+      "path": ".release-assets/v1.0.9/archive.part022",
+      "size": 399000,
+      "sha256": "af6fee50755c23d41c6281de3a9fba70ee038c645b694b788a248a3f84c1d7a6"
+    },
+    {
+      "path": ".release-assets/v1.0.9/archive.part023",
+      "size": 110018,
+      "sha256": "c508b0771cce1ba53ac4300a6d36afce6474c2b9a75b49cd685354327f63ed80"
+    }
+  ],
+  "assets": [
+    {
+      "name": "SpectralPaint-1.0.9-Windows-App-and-VST3-x64.zip",
+      "size": 9287018,
+      "sha256": "c856198529e538432c98b02756228780f49b7a3af5b385c1ea608f311e5f5207"
+    },
+    {
+      "name": "SpectralPaint-1.0.9-Users-Manual.pdf",
+      "size": 427725,
+      "sha256": "50038d10034cfb7c047f4074e5ff81a08f4b6558ebe7e178bb7cba00e1e2af71"
+    },
+    {
+      "name": "WHATS-NEW-1.0.9.txt",
+      "size": 809,
+      "sha256": "40f5bacdf5bf3e6855097f19030d43ffbfd9152ae008535cba60c3cdeb94895d"
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "size": 304,
+      "sha256": "3061679fcd530f6f0bc7b6ad454561ca9e5ff1cbc94f842fc4cc2a5a5d050782"
+    }
+  ],
+  "release_target": "9226d4bbefd4493583f247e7981f09763c670dbb"
+}

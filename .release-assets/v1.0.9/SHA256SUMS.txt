@@ -1,0 +1,3 @@
+c856198529e538432c98b02756228780f49b7a3af5b385c1ea608f311e5f5207  SpectralPaint-1.0.9-Windows-App-and-VST3-x64.zip
+50038d10034cfb7c047f4074e5ff81a08f4b6558ebe7e178bb7cba00e1e2af71  SpectralPaint-1.0.9-Users-Manual.pdf
+40f5bacdf5bf3e6855097f19030d43ffbfd9152ae008535cba60c3cdeb94895d  WHATS-NEW-1.0.9.txt
