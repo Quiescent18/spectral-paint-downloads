@@ -2,6 +2,8 @@
 
 Windows x64 standalone audio editor and ARA-enabled VST3.
 
+![Spectral Paint cymbal bleed example from the user manual](assets/Cymbal-Bleed-Noise-Threshold.png)
+
 ## Download Windows Application + VST3
 
 [Download Spectral Paint 1.0.9 for Windows](https://github.com/Quiescent18/spectral-paint-downloads/releases/download/v1.0.9/SpectralPaint-1.0.9-Windows-App-and-VST3-x64.zip)
