@@ -1,0 +1,84 @@
+name: Publish validated Spectral Paint resize build
+on:
+  push:
+    paths:
+      - .github/workflows/publish-linked-resize.yml
+permissions:
+  contents: write
+jobs:
+  package:
+    if: ${{ github.event.head_commit.message == 'Publish linked resize Windows package' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download validated Windows artifact
+        env:
+          ARTIFACT_URL: "https://sdmntprnorthcentralus.oaiusercontent.com/files/00000000-2444-822f-91a6-35d85e5a9167/raw?se=2026-11-15T17%3A30%3A16Z&sp=r&sv=2026-06-06&sr=b&scid=449379bd-e37d-5ab7-9d43-86ad8fce3ba6&skoid=bbd22fc4-f881-4ea4-b2f3-c12033cf6a8b&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-11-15T11%3A14%3A19Z&ske=2026-11-16T11%3A14%3A19Z&sks=b&skv=2026-06-06&sig=5c7w/RFamLIP7zN/q%2Bii8nbFRaQmTEaWQre2Z1rnJuY%3D"
+        run: |
+          set -euo pipefail
+          curl --fail --location --retry 3 --silent --show-error "$ARTIFACT_URL" -o build.zip
+          unzip -tq build.zip
+      - name: Create clean installer ZIP
+        run: |
+          set -euo pipefail
+          mkdir -p extracted package
+          unzip -oq build.zip -d extracted
+          cp "extracted/Spectral Paint.exe" package/
+          cp -R "extracted/Spectral Paint.vst3" package/
+          cp "extracted/SpectralPaint-1.0.9-Users-Manual.pdf" package/
+          cat > package/README.txt <<'EOF'
+          SPECTRAL PAINT - KISATCHIE AUDIO
+          Version 1.0.9 (linked-selection resize fix)
+          Windows x64 standalone editor and ARA-enabled VST3
+
+          PACKAGE CONTENTS
+            Spectral Paint.exe
+            Spectral Paint.vst3/        (complete VST3 folder)
+            SpectralPaint-1.0.9-Users-Manual.pdf
+            README.txt
+
+          INSTALLATION
+          1. Extract this ZIP fully before installing.
+          2. Close REAPER or another DAW before replacing an installed VST3.
+          3. Copy the ENTIRE "Spectral Paint.vst3" folder into:
+               C:\Program Files\Common Files\VST3\
+          4. Restart the DAW and rescan VST3 plug-ins if needed.
+          5. Enable ARA source access in your ARA-capable DAW.
+          6. For standalone use launch "Spectral Paint.exe". No VST3 installation is
+             required for standalone use; choose your audio device in the app.
+          7. The application version remains 1.0.9. This build includes the
+             linked-selection resizing improvement built and tested 15 Nov 2026.
+
+          WHAT CHANGED
+          Linked selections can now be shrunk without being limited by the
+          shortest or narrowest selection in the group. Regions that collapse
+          to zero duration/width are removed on mouse release. All other
+          regions continue resizing. The operation remains one Undo step.
+
+          LICENSES AND THIRD-PARTY NOTICES
+          The following source-distributed license notices are retained here
+          because this ZIP intentionally contains only four top-level items.
+          EOF
+          for f in extracted/LICENSE extracted/THIRD-PARTY-LICENSES/*; do
+            if [ -f "$f" ]; then
+              printf '\n----- %s -----\n' "${f#extracted/}" >> package/README.txt
+              if [[ "$f" == *.pdf ]]; then
+                echo "PDF license notice is distributed in source repository: https://github.com/Quiescent18/spectral-paint/tree/main/THIRD-PARTY-LICENSES" >> package/README.txt
+              else
+                cat "$f" >> package/README.txt
+              fi
+              printf '\n' >> package/README.txt
+            fi
+          done
+          archive="SpectralPaint-1.0.9-Linked-Resize-Windows-x64.zip"
+          (cd package && zip -qr "../$archive" "Spectral Paint.exe" "Spectral Paint.vst3" "SpectralPaint-1.0.9-Users-Manual.pdf" "README.txt")
+          unzip -tq "$archive"
+          sha256sum "$archive"
+          echo "ZIP_NAME=$archive" >> "$GITHUB_ENV"
+      - name: Publish release asset to public downloads repo
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          gh release create "v1.0.9-linked-resize" "$ZIP_NAME" --repo "$GITHUB_REPOSITORY" \
+            --title "Spectral Paint 1.0.9 - Linked Selection Resize Fix" \
+            --notes "Validated Windows x64 standalone and ARA VST3 build from source commit e24fcbd205a03c1ce77df211824140f7f8f03422. Contains only the EXE, complete VST3 folder, illustrated user manual, and README with installation and license information."
