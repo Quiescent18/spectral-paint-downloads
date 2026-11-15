@@ -4,11 +4,19 @@ Windows x64 standalone audio editor and ARA-enabled VST3.
 
 ![Spectral Paint cymbal bleed example from the user manual](assets/Cymbal-Bleed-Noise-Threshold.png)
 
-## Download Windows Application + VST3
+## Linked-selection resizing update — November 15, 2026
 
-[Download Spectral Paint 1.0.9 for Windows](https://github.com/Quiescent18/spectral-paint-downloads/releases/download/v1.0.9/SpectralPaint-1.0.9-Windows-App-and-VST3-x64.zip)
+A tested Windows maintenance build of **1.0.9** fixes linked-region resizing: resizing a larger time/frequency selection is no longer limited by the shortest or narrowest region in the group. Regions that collapse to zero size are removed when you release the mouse. The change remains undoable as a single step.
 
-The Windows ZIP contains **Spectral Paint.exe**, the complete **Spectral Paint.vst3** bundle, the illustrated user manual, demo audio, installation notes and license notices. Use this ZIP to install the application and plug-in. GitHub's separate **Source code** archives contain repository files.
+The **four-item updated ZIP** has been prepared, containing only **Spectral Paint.exe**, the complete **Spectral Paint.vst3** folder, the illustrated **PDF manual**, and **README.txt** (installation and licensing). Its SHA-256 checksum is `d0113e065b2196069032872a1b12d3e8e0c1cb10caacd56ffb0f5a4c7862e366`.
+
+**Publication status:** the tested maintenance ZIP is not yet available as a public GitHub release asset. The public download below remains the earlier **1.0.9 release without this resizing fix**. Repository collaborators can inspect the [successful Windows build and tests](https://github.com/Quiescent18/spectral-paint/actions/runs/43737739650); that workflow's artifact is not the trimmed four-item ZIP.
+
+## Download Windows Application + VST3 (previous public build)
+
+[Download Spectral Paint 1.0.9 (previous public Windows build)](https://github.com/Quiescent18/spectral-paint-downloads/releases/download/v1.0.9/SpectralPaint-1.0.9-Windows-App-and-VST3-x64.zip)
+
+The currently published Windows ZIP contains **Spectral Paint.exe**, the complete **Spectral Paint.vst3** bundle, the illustrated user manual, demo audio, installation notes and license notices. Use this ZIP to install the application and plug-in. GitHub's separate **Source code** archives contain repository files.
 
 Extract the whole ZIP. Close your DAW before replacing the entire VST3 bundle in a scanned VST3 folder, typically `C:\Program Files\Common Files\VST3`. Enable ARA source access in an ARA-capable DAW. For standalone use, launch **Spectral Paint.exe** and choose your audio device. Verify **1.0.9** in the application or plug-in header.
 
